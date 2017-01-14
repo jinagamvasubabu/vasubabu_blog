@@ -1,0 +1,10 @@
+#!/bin/sh      
+
+ssh hangoutdude@159.203.95.192 <<EOF        
+ cd ~/vasubabu_blog  
+ git pull       
+ npm install --production       
+ hexo generate
+ hexo server
+ exit       
+EOF
