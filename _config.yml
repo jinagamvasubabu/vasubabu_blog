@@ -5,7 +5,7 @@
 # Site
 title: Vasubabu
 subtitle: Hangoutdude
-description: Knowing about me gives more fun!!!
+description: A Fullstack developer loves coding and blogging!!!! Meet me <span><a href="https://in.linkedin.com/in/vasu-babu-a94895a1">@Linkedin</a></span> <span><a href="https://github.com/jinagamvasubabu">@Github</a></span> <span><a href="https://www.facebook.com/vasu4Uth">@Facebook</a></span>
 author: Vasubabu
 language: en
 timezone: Asia/Kolkata
@@ -66,7 +66,7 @@ pagination_dir: page
 theme: flexy
 
 #Disqus
-disqus_shortname: vasubabu
+disqus_shortname: hangoutdude
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
