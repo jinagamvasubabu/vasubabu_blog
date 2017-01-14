@@ -35,18 +35,14 @@ I would recommend installing node using Node Version Manager(NVM). That saved a 
 
 ``` bash
 $ sudo apt-get remove nodejs
-
 $ sudo apt-get remove npm
 ```
 
 ``` bash
-sudo rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node* /usr/local/lib/dtrace/node.d ~/.npm ~/.node-gyp /opt/local/bin/node opt/local/include/node /opt/local/lib/node_modules
-
-sudo rm -rf /usr/local/lib/node*
-
-sudo rm -rf /usr/local/include/node*
-
-sudo rm -rf /usr/local/bin/node*
+$ sudo rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node* /usr/local/lib/dtrace/node.d ~/.npm ~/.node-gyp /opt/local/bin/node opt/local/include/node /opt/local/lib/node_modules
+$ sudo rm -rf /usr/local/lib/node*
+$ sudo rm -rf /usr/local/include/node*
+$ sudo rm -rf /usr/local/bin/node*
 ```
 
 Check for any .npm or .node folder in your home folder and delete those.
