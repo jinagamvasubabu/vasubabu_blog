@@ -6,7 +6,7 @@ comments: true
 author: Vasubabu
 ---
 
-[Hexo.io](www.hexo.io) is a good blogging platform built on node.js. But some people face issues while installing in Ubuntu or Mac. Local `hexo` not found is one of those.
+[Hexo.io](www.hexo.io) is a good blogging framework built on node.js. But some people face issues while installing in Ubuntu or Mac. Local `hexo` not found is one of those.
 
 ## Hexo.io
 
@@ -28,12 +28,47 @@ $ sudo npm install -g hexo-server
 
 ### Not Working ??
 
-Delete the node_modules completely in your project and install again and repeat the above two steps again.
+Uninstall `Node.js` and `npm` and install node.js using Node version manager `NVM`.
+
+I would recommend installing node using Node Version Manager(NVM). That saved a lot of head ache for me. Because you can install nodejs and npm without sudo using nvm.
+
 
 ``` bash
-$ cd blog
-$ rm -rf node_modules
-$ npm install
+$ sudo apt-get remove nodejs
+
+$ sudo apt-get remove npm
 ```
 
-Please comment below if it still doesn't work
+``` bash
+sudo rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node* /usr/local/lib/dtrace/node.d ~/.npm ~/.node-gyp /opt/local/bin/node opt/local/include/node /opt/local/lib/node_modules
+
+sudo rm -rf /usr/local/lib/node*
+
+sudo rm -rf /usr/local/include/node*
+
+sudo rm -rf /usr/local/bin/node*
+```
+
+Check for any .npm or .node folder in your home folder and delete those.
+
+If you type
+
+``` bash
+$ which node #output should be empty
+```
+
+## Install `NVM`
+
+To install `nvm` i suggest you to refer this `Digitalocean post` [Install NVM](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server#how-to-install-using-nvm)
+
+once `nvm` is setup properly, run again these commands
+
+``` bash
+$ cd blog_folder
+$ npm install
+$ npm install -g hexo hexo-cli hexo-server
+$ hexo generate
+$ hexo server
+```
+
+Happy Blogging :) 
