@@ -1,2 +1,2 @@
 # vasubabu_blog
-Its my technical blog 
+It's my technical blog 
