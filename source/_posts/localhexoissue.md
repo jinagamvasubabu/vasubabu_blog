@@ -1,5 +1,5 @@
 ---
-title: Solution for Local hexo not found error
+title: Solution for Local hexo not found error (Hexo.io)
 intro: Local hexo not found error is an annoying error while developing blogs using Hexo.io
 date: 2017-01-14 00:00:00
 comments: true
